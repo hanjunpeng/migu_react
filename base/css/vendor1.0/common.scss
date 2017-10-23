@@ -1,0 +1,608 @@
+@import 'helper.scss';
+@media (min-width:240px) and (max-width:320px){html{font-size:12.8px!important}}
+@media (min-width:321px) and (max-width:360px){html{font-size:14.4px!important}}
+@media (min-width:361px) and (max-width:375px){html{font-size:15px!important}}
+@media (min-width:376px) and (max-width:384px){html{font-size:15.36px!important}}
+@media (min-width:376px) and (max-width:414px){html{font-size:16.56px!important}}
+@media (min-width:415px) and (max-width:568px){html{font-size:22.72px!important}}
+@media (min-width:569px) and (max-width:640px){html{font-size:25.6px!important}}
+@media (min-width:641px) and (max-width:667px){html{font-size:26.68px!important}}
+@media (min-width:668px) and (max-width:736px){html{font-size:29.44px!important}}
+@media (min-width:738px) and (max-width:768px){html{font-size:30.72px!important}}
+@media (min-width:769px) and (max-width:900px){html{font-size:36px!important}}
+@media (min-width:901px) and (max-width:1080px){html{font-size:43.24px!important}}
+.co-font-smallest{
+  font-size:0.6rem;/**9px**/
+  line-height:150%;
+}
+.co-font-smaller{
+  font-size:0.67rem;/**10px**/
+  line-height:150%;
+}
+.co-font-small{
+  font-size:0.73rem;/**11px**/
+  line-height:150%;
+}
+.co-font-normal{
+  font-size:0.8rem;/**12px**/
+  line-height:150%;
+}
+.co-font-big{
+  font-size:0.87rem;/**13px**/
+  line-height:150%;
+}
+.co-font-bigger{
+  font-size:0.94rem;/**14px**/
+  line-height:150%;
+}
+.co-font-biggest{
+  font-size:1rem;/**15px**/
+  line-height:150%;
+}
+.co-font-large{
+  font-size:1.07rem;/**16px**/
+  line-height:150%;
+}
+.co-font-larger{
+  font-size:1.13rem;/**17px**/
+  line-height:150%;
+}
+.co-font-largest{
+  font-size:1.2rem;/**18px**/
+  line-height:150%;
+}
+.co-font-giant{
+  font-size:1.27rem;/**19px**/
+  line-height:150%;
+}
+.co-font-super{
+  font-size:1.7rem;/**25px**/
+  line-height:150%;
+}
+.co-uiplugins {
+  width:100%;
+  position:Relative;
+  top:20px;
+}
+.co-bold{
+  font-weight:bold;
+}
+
+@font-face {
+  font-family: 'cmread';  /* project id 240482 */
+  src: url('//at.alicdn.com/t/font_240482_icdwigfkbi8gp66r.eot');
+  src: url('//at.alicdn.com/t/font_240482_icdwigfkbi8gp66r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_240482_icdwigfkbi8gp66r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_240482_icdwigfkbi8gp66r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_240482_icdwigfkbi8gp66r.svg#cmread') format('svg');
+}
+
+.co-icon{
+  font-family:"cmread" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.co-clock-icon:before { content: "\e635"; }
+.co-greater-icon:before { content: "\e60b";}
+.co-close-icon:before { content: "\e611"; }
+.co-horn-icon:before { content: "\e609"; }
+.co-clock-icon:before { content: "\e635"; }
+.co-author-icon:before{content:"\e605";}
+.co-migu-icon:before{content:"\e606";}
+.co-change-icon:before{content:"\e60d";}
+.co-selfsignbk-icon:before{content:"\e610";}
+.co-up-icon:before{content:"\e60a";}
+.co-nochange-icon:before{content:"\e60c";}
+.co-down-icon:before{content:"\e60f";}
+.co-collect-icon:before{content:"\e614";}
+.co-bksheet-icon:before{content:"\e613";}
+.co-cmore-icon:before{content:"\e60e";}
+.co-vspeaker-icon:before{content:"\e612";}
+.co-hspeaker-icon:before{content:"\e615";}
+.co-flash-icon:before{content:"\e617";}
+.co-dust-icon:before{content:"\e648";}
+.co-ask-icon:before{content:"\e667";}
+.co-circle-icon:before{content:"\e6ae";}
+.co-search-icon:before{content:"\e801";}
+.co-comment-icon:before{content:"\e68a";}
+.co-select-icon:before{content:"\e6b5";}
+.co-msuggest-icon:before{content:"\e616";}
+.co-mfree-icon:before{content:"\e618";}
+.co-mlight-icon:before{content:"\e619";}
+.co-mnoads-icon:before{content:"\e61a";}
+.co-mrocket-icon:before{content:"\e61b";}
+.co-mgrowlevel-icon:before{content:"\e61c";}
+.co-selectback-icon:before{content:"\e61d";}
+.co-selectopen-icon:before{content:"\e61e";}
+.co-selectdown-icon:before{content:"\e61f";}
+.co-author-icon{font-size:0.87rem;}
+.co-blockheart-icon:before{content:"\e630";}
+.co-btn-type1{
+  padding:5px 12px;
+  background-color:#3778ff;
+  color:#fff;
+  border-radius:14px;
+}
+.co-btn-type2{
+  padding:1px 3px;
+  color:#f85a44;
+  border-radius:6px;
+  border:1px solid rgba(240,90,68,0.5);
+}
+.co-speaker{
+  color:#4395fa;
+  line-height:150%;
+  padding:26px 4.3%;
+  background-color:#fcfcfc;
+  position:relative;
+}
+.co-speaker-ctt{
+  color:#969fa9;
+  margin:0 1.6%;
+  @include text-overflow;
+  width:84%;
+}
+.co-speaker-more{
+  position:absolute;
+  right:4.3%;
+  color:#969fa9;
+}
+.co-change-tt{
+  color:#3e8aff;
+  position:relative;
+  padding-left:0.4rem;
+}
+.co-change-tt:before{
+  content:"";
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/20170616092726941.png) no-repeat;
+  position:absolute;
+  display:inline-block;
+  background-size:contain;
+  width:6rem;
+  height:1rem;
+  top:0.27rem;
+  left:-0.2rem;
+}
+.co-btn-type3{
+  color:#ff8c10;
+  background-color:#fef9f2;
+  border:1px solid rgba(249,217,183,0.5);
+  border-radius:11px 13px 13px 0;
+  padding:0.13rem 0.6rem;
+  position:relative;
+}
+
+.co-booktag-read{
+   color:#fff;
+   background-color:#6293f8;
+   border-radius:2px;
+   position:absolute;
+   width:100%;
+   text-align:center;
+   bottom:0.8rem;
+   padding:1px 1px;
+   left:-1px;
+   z-index:10;
+   box-shadow:0 1px 3px rgba(0,0,0,0.5);
+ }
+
+.co-btn-type4{
+  color:#3778ff;
+  background-color:#fff;
+  border:1px solid #3778ff;
+  border-radius:1rem;
+  padding:0.2rem 1rem;
+
+}
+.co-btn-type5{
+  color:#969fa9;
+  background-color:#fff;
+  border:1px solid #969fa9;
+  border-radius:4px;
+  padding:0 7px;
+}
+.co-booktag-ugc{
+  position:absolute;
+  width:1.8rem;
+  height:1.9rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/20170502104827839.png) no-repeat;
+  background-size:contain;
+  display:inline-block;
+  top:-4px;
+  right:-6px;
+  z-index:10;
+}
+.co-booktag-limitfree{
+  position:absolute;
+  width:1.7rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/20170420085622716.png) 14% 83.3% no-repeat;
+  background-size:169%;
+  display:inline-block;
+  top:-2px;
+  right:-5px;
+  height:1.8rem;
+  z-index:10;
+}
+.co-booktag-famous{
+  position:absolute;
+  width:2.3rem;
+  height:1.4rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/20170420085622716.png) 38% 26.9% no-repeat;
+  background-size:117%;
+  display:inline-block;
+  top:-2px;
+  right:-3px;
+  z-index:10;
+}
+.co-booktag-member{
+  position:absolute;
+  width:2.3rem;
+  height:1.4rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/20170420085622716.png) 38% 40.1% no-repeat;
+  background-size:117%;
+  display:inline-block;
+  top:-3px;
+  right:-3px;
+  z-index:10;
+}
+.co-booktag-free{
+  position:absolute;
+  width:1.7rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/20170420085622716.png) 14% 99% no-repeat;
+  background-size:169%;
+  display:inline-block;
+  top:-2px;
+  right:-5px;
+  height:1.8rem;
+  z-index:10;
+}
+.co-booktag-finish{
+  position:absolute;
+  width:2.3rem;
+  height:1.4rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/20170420085622716.png) 38% 0.5% no-repeat;
+  background-size:117%;
+  display:inline-block;
+  top:-2px;
+  right:-3px;
+  z-index:10;
+}
+.co-booktag-newbk{
+  position:absolute;
+  width:2.3rem;
+  height:1.4rem;
+  background:url(//wap.coead.com/rbc/p/content/repository/ues/image/s109/20170420085622716.png) 38% 13.7% no-repeat;
+  background-size:117%;
+  display:inline-block;
+  top:-2px;
+  right:-3px;
+  z-index:10;
+}
+.co-booktag-hotbk{
+  position:absolute;
+  width:2.9rem;
+  height:1.9rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/20170502104816763.png) no-repeat;
+  background-size:contain;
+  display:inline-block;
+  top:-5px;
+  right:-9px;
+  z-index:10;
+}
+.co-booktag-updatebk{
+  position:absolute;
+  width:1.7rem;
+  height:2.2rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/updatebk.png) no-repeat;
+  background-size:contain;
+  display:inline-block;
+  top:-7px;
+  right:-6px;
+  z-index:10;
+}
+.co-btn-type6{
+  color:#3778ff;
+  background-color:#fff;
+  border:1px solid #3778ff;
+  border-radius:15px;
+  padding:4px 5%;
+}
+.co-booktag-type9{
+  position:absolute;
+  width:3.7rem;
+  background:url(https://wap.cmread.com/rbc/p/content/repository/ues/image/s109/topicon.png) 0 4% no-repeat;
+  background-size:110%;
+  display:inline-block;
+  top:-3px;
+  right:-6px;
+  height:1.3rem;
+  z-index:10;
+}
+.co-booktag-type10{
+  position:absolute;
+  width:3.7rem;
+  background:url(https://wap.cmread.com/rbc/p/content/repository/ues/image/s109/topicon.png) 0 47.2% no-repeat;
+  background-size:110%;
+  display:inline-block;
+  top:-3px;
+  right:-6px;
+  height:1.3rem;
+  z-index:10;
+}
+.co-booktag-type11{
+  position:absolute;
+  width:3.7rem;
+  background:url(https://wap.cmread.com/rbc/p/content/repository/ues/image/s109/topicon.png) 0 92% no-repeat;
+  background-size:110%;
+  display:inline-block;
+  top:-3px;
+  right:-6px;
+  height:1.3rem;
+  z-index:10;
+}
+/**structure**/
+.co-notice{
+  color:#3778ff;
+}
+.co-notice-ctt{
+  margin-left:2%;
+  margin-right:4%;
+}
+.co-box-more{
+  color:#3e8aff;
+}
+.co-tt-container{
+  background-color:#fcfcfc;
+  padding:0.8rem 4.2%;
+  position:relative;
+}
+.co-more-ttpos{
+  position:absolute;
+  right:4.3%;
+  top:34%;
+}
+.co-tt-nm{
+  margin-right:2%;
+  color:#464c56;
+  font-weight:bold;  }
+.co-more-tt .co-greater-icon{
+  font-size:0.7rem;
+}
+.co-rank-bkdesc{
+  -webkit-box-flex:1;
+  position:relative;
+}
+.co-rank-bookname{
+  color:#464c56;
+  @include text-overflow;
+  display:block;
+  margin:2% 0;
+  width:100%;
+}
+.co-rank-bookauthor{
+  color:#969fa9;
+  @include text-overflow;
+  display:block;
+  margin-top:2%;
+  width:100%;
+}
+.co-rank-bookinfo{
+  color:#464c56;
+  @include line-clamp(2);
+  width:100%;
+  position:absolute;
+  bottom:9%;
+}
+.co-bkcate-pos{
+  position:absolute;
+  right:0;
+  top:2.52rem;
+}
+.co-textbox{
+  position:relative;
+  width:91.6%;
+  padding:0 4.2%;
+}
+.co-text-bkname{
+  @include text-overflow;
+  display:block;
+  width:70%;
+  margin-left:2%;
+}
+.co-text-authorname{
+  @include text-overflow;
+  display:block;
+  width:10%;
+  position:absolute;
+  right:4.2%;
+}
+/**homepage**/
+.co-home-lv{
+  padding:1px;
+  border:1px solid  #3778ff;
+  border-radius:2px;
+  color:#3778ff;
+}
+.co-boy-icon:before{content:"\e67e";}
+.co-girl-icon:before{content:"\e600";}
+.co-plus-icon:before{content:"\e676";}
+.co-right-icon:before{content:"\e627";}
+.co-mail-icon:before{content:"\e601";}
+.co-follow-icon:before{content:"\e640";}
+.co-great-icon:before{content:"\e6ed";}
+.co-boy{
+  padding:0 1px;
+  border:1px solid #000;
+  border-radius:2px;
+  color:#000;
+}
+.co-girl{
+   padding:0 1px;
+   border:1px solid #000;
+   border-radius:2px;
+   color:#000;
+ }
+.co-home-follow{
+  background-color:#3778ff;
+  color:#fff;
+  border-radius:2rem;
+  padding:0.58rem 1rem;
+}
+.co-pluspos{
+  position:relative;
+  top:-2px;
+}
+.co-booktag-personugc{
+  position:absolute;
+  width:91%;
+  background-image:-webkit-linear-gradient(-45deg, #27a5ee,#27a5ee 30%, rgba(124,191,28,.0) 85%,rgba(124,191,28,.0));
+  display:inline-block;
+  height:1.6rem;
+  z-index:10;
+  color:#fff;
+  line-height:1.6rem;
+  bottom:17%;
+  padding-left:9%;
+}
+
+.co-personhead{
+  width:6.13rem;
+  height:6.13rem;
+  border-radius:50%;
+  background:url(//wap.cmread.com/hbc/p/content/repository/ues/image/s181/homepage_head.png) no-repeat;
+  background-size:contain;
+}
+.co-headimg{
+  width:6.13rem;
+  height:6.13rem;
+  border-radius:50%;
+}
+.co-ugcrecord{
+  position:relative;
+  border:2px solid #acccfd;
+  width:4.1rem;
+  height:4.1rem;
+  border-radius:50%;
+}
+.co-recordnm{
+  position:absolute;
+  top:1rem;
+  left:0.4rem;
+  color:#1f77ff;
+}
+.co-record-icon1{
+  position:absolute;
+  color:#d6e5fd;
+  top:2.1rem;
+  left:1rem;
+}
+.co-record-icon2{
+  position:absolute;
+  color:#a4c7fd;
+  top:2.1rem;
+  left:1.4rem;
+}
+.co-record-icon3{
+  position:absolute;
+  color:#79acfe;
+  top:2.1rem;
+  left:1.8rem;
+}
+.co-record-icon4{
+  position:absolute;
+  color:#3f8aff;
+  top:2.1rem;
+  left:2.2rem;
+}
+.co-attention-icon:before{content:"\e621";}
+.co-circle-icon:before{content:"\e629";}
+.co-choose-icon:before{content:"\e62f";}
+.co-dele-icon:before{content:"\e65f";}
+
+.co-star-icon:before{content:"\e652";}
+
+.co-book-listen{
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/label_icon_lesson.png) no-repeat;
+  background-size:contain;
+  position:absolute;
+  bottom:-1px;
+  right:-1px;
+  width:2rem;
+  height:2rem;
+  z-index:12;
+}
+.co-vspeaker-pos{
+  margin:0 2% 0 13%;
+}
+.co-hspeaker-color{
+  color:#3e8aff;
+}
+span.co-price-red{
+  color:#f85a44;
+}
+.co-center-loading{
+  position:absolute;
+  top:41%;
+  left:48%;
+  width:2rem;
+  height:2rem;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/loading.png) no-repeat;
+  background-size:contain;
+  animation:loading 7s infinite linear;
+}
+@keyframes loading {
+  from {transform:rotate(0deg);transform-origin:center;}
+  to {transform: rotate(3600deg);transform-origin:center;}
+}
+.co-booktag-bwaist{
+  position:absolute;
+  bottom:0.2rem;
+  width:67%;
+  height:19.5%;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/newbooktag.png) 98% 1% no-repeat;
+  background-size:103%;
+  z-index:10;
+  left:-1px;
+  font-size:0.67rem;
+  color:#fff;
+  text-align:center;
+  @include text-overflow;
+}
+.co-booktag-rwaist{
+  position:absolute;
+  bottom:0.2rem;
+  width:67%;
+  height:19.5%;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/newbooktag.png) 98% 101.7% no-repeat;
+  background-size:103%;
+  z-index:10;
+  left:-1px;
+  font-size:0.67rem;
+  color:#fff;
+  text-align:center;
+  @include text-overflow;
+}
+.co-booktag-gwaist{
+  position:absolute;
+  bottom:0.2rem;
+  width:67%;
+  height:19.5%;
+  background:url(//wap.cmread.com/rbc/p/content/repository/ues/image/s109/newbooktag.png) 39% 51.8% no-repeat;
+  background-size:103%;
+  z-index:10;
+  left:-1px;
+  font-size:0.67rem;
+  color:#fff;
+  text-align:center;
+  @include text-overflow;
+}
+.co-showline:after{
+  content:"";
+  display:block;
+  width:91.6%;
+  margin-left:4.2%;
+  border-top:1px solid #f0f0f0;
+}
+.co-margintop{border-top:0.67rem solid #f0f0f0}
+.co-marginbottom{border-bottom:0.67rem solid #f0f0f0}

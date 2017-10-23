@@ -1,0 +1,166 @@
+/**scrollable,zhangsai,2017/3/10,start**/
+/**使ios滚动更加平滑**/
+@mixin smooth-scroll{
+  -webkit-overflow-scrolling:touch;
+}
+/**scrollable,zhangsai,2017/3/10,end,**/
+/**vendor prefix,zhangsai,2017/3/10,start**/
+/**主要用于各种animation浏览器适配前缀**/
+@mixin prefix($property, $value){
+  -webkit-#{$property}: $value;
+  #{$property}: $value;
+}
+@mixin scale($ratio){
+  -webkit-transform:scale($ratio);
+  transform:scale($ratio);
+}
+@mixin scaleX($ratio){
+  -webkit-transform:scaleX($ratio);
+  transform:scaleX($ratio);
+}
+@mixin scaleY($ratio){
+  -webkit-transform:scaleY($ratio);
+  transform:scaleY($ratio);
+}
+@mixin skew($x,$y){
+  -webkit-transform:skewx($x) skewy($y);
+  transform:skewx($x) skewy($y);
+}
+@mixin translate($x,$y){
+  -webkit-transform:translate($x,$y);
+  transform:translate($x,$y);
+}
+@mixin rotate($degrees){
+  -webkit-transform:rotate($degrees);
+  transform:rotate($degrees);
+}
+@mixin rotateX($degrees){
+  -webkit-transform:rotateX($degrees);
+  transform:rotateX($degrees);
+}
+@mixin rotateY($degrees){
+  -webkit-transform:rotateY($degrees);
+  transform:rotateY($degrees);
+}
+/**vendor prefix,zhangsai,2017/3/10,end,**/
+/**text-overflow,zhangsai,2017/3/10,start**/
+/**适用于inline-block或block**/
+@mixin text-overflow{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+/**text-overflow,zhangsai,2017/3/10,end**/
+/**line clamp,zhangsai,2017/3/10,start**/
+/**控制文字显示行数**/
+@mixin line-clamp($lines){
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$lines;
+  overflow:hidden;
+  max-height:150% * $lines;
+}
+/**line clamp,zhangsai,2017/3/10,end**/
+/**clearfix,zhangsai,2017/3/10,start**/
+/**清楚浮动**/
+@mixin clearfix{
+  &:before,
+  &:after{
+    content:"";
+    display:table;}
+  &:after{
+    clear:both;
+    overflow:hidden;}
+}
+/**clearfix,zhangsai,2017/3/10,end**/
+/**triangle,zhangsai,2017/3/10,start**/
+/** Creates a CSS triangle, which can be used for dropdown arrows, popup tails, and more. Use this mixin inside a `&::before` or `&::after` selector, to attach the triangle to an existing element.
+@param {number} $triangle-size - Width of the triangle.
+@param {color} $triangle-color - Color of the triangle.
+@param {keyword} $triangle-direction - Direction the triangle points. Can be `top`, `right`, `bottom`, or `left`.
+**/
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset $triangle-size;
+  @if ($triangle-direction == top) {
+    border-color: $triangle-color transparent transparent transparent;
+    border-top-style: solid;
+  }
+  @if ($triangle-direction == bottom) {
+    border-color: transparent transparent $triangle-color transparent;
+    border-bottom-style: solid;
+  }
+  @if ($triangle-direction == left) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+  @if ($triangle-direction == right) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}
+/**triangle,zhangsai,2017/3/10,end**/
+/**triangle,zhangsai,2017/3/10,start**/
+/**animation hardware accelaration**/
+@mixin force-hardware-acceleration{
+  transform:translateZ(0);
+  backface-visibility:hidden;
+  perspective:inherit;
+}
+/**triangle,zhangsai,2017/3/10,end**/
+@mixin flex-box(){
+  display:-moz-box;
+  display:-webkit-box;
+  display:box;
+  display:flex;
+  display:-webkit-flex;
+}
+@mixin child-flex(){
+  -moz-box-flex:1;
+  -webkit-box-flex:1;
+  box-flex:1;
+  flex:1;
+  display:block;
+}
+@function pxTorem($px){
+  @return $px/30+ rem;
+}
+@mixin transformXYZ($form,$xyz,$percent){
+  @if($form == top){
+    top:$percent;
+  }@else if($form == topleft){
+    top:$percent;
+    left:$percent;
+  }@else{
+    #{$form}:$percent;
+  }
+  $position:translate3d(0,0,0);
+  @if ($xyz == x){
+    $position:translate3d(-$percent,0,0);
+  }@elseif ($xyz == y){
+    $position:translate3d(0,-$percent,0);
+  }@elseif ($xyz == z){
+    $position:translate3d(0,0,-$percent);
+  }@elseif ($xyz == xy){
+    $position:translate3d(-$percent,-$percent,0);
+  }@elseif ($xyz == xz){
+    $position:translate3d(-$percent,0,-$percent);
+  }@elseif ($xyz == yz){
+    $position:translate3d(0,-$percent,-$percent);
+  }@elseif ($xyz == xyz){
+    $position:translate3d(-$percent,-$percent,-$percent);
+  }
+  transform:$position;
+  -webkit-transform:$position;
+}
+
+@mixin borderRadius($px){
+  border-radius: $px;
+  -webkit-border-radius: $px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
