@@ -1,0 +1,181 @@
+@import '../../base/config.scss';
+@import '../../base/mixin.scss';
+.cmr-monthticket_benefit {
+	.cmr-mb-title{
+        margin:0 4.2%;
+        height:7.53rem;
+        border-bottom:1px solid #e7e7e7;
+        position:relative;
+        i{
+            background: url(http://wap.cmread.com/hbc/p/content/repository/ues/image/s181/20161117105137132.png) 0 4.09rem;
+            width:6.6rem;
+            height:4.07rem;
+            position:absolute;
+            top:1.67rem;
+            background-size: 6.733rem;
+            display: inline-block;
+        }
+        span:last-child{
+            font-size: 1.133rem;
+            color:#848383;
+            position:absolute;
+            top:4.2rem;
+            left:31%;
+        }
+       .cmr-mb-month-title{
+            font-size: 1.6rem;
+            color:#323232;
+            font-weight:bold;
+            position:absolute;
+            top:2.33rem;
+            left:31%;
+        }
+    }
+    .cmr-mb-growhead{
+        font-size: 1.07rem;
+        height:3.13rem;
+        line-height: 3.13rem;
+        color:#323232;
+        i{
+            height:0.93rem;
+            display: inline-block;
+            width:0.2rem;
+            background-color: #595959;
+            margin:0 0.33rem 0 5%;
+            position: relative;
+            top:0px;
+        }
+    }
+    .cmr-mb-fuwen{
+        margin:0 1.07rem 0 1.77rem;
+    }
+    .cmr-mb-card{
+        padding:0 7% 1rem 7%;
+        font-size: 0.933rem;
+        width:86%;
+        color:#848383;
+        margin-top:-1.33rem;
+        border-bottom:0.67rem solid #f0f0f0;
+        i{
+            margin:20px 0 10px 0;
+            display: inline-block;
+            color:#323232;
+        }
+    }
+    .cmr-mb-dcontainer{
+        min-height: 15.33rem;
+        padding:0 4.2%;
+        position:relative;
+        .cmr-mb-monthtic-detail{
+            height: 5.53rem;
+            width:100%;
+            margin-bottom:0.67rem;
+            background:url(http://wap.cmread.com/hbc/p/content/repository/ues/image/s181/choujaing.png) no-repeat;
+            background-size: 100% 100%;
+            position:relative;
+        }
+        .cmr-mb-monthtic-detailsecond{
+            height:6.27rem;
+            width:100%;
+            margin-bottom:0.67rem;
+            background: url(http://wap.cmread.com/rbc/p/content/repository/ues/image/s109/booknamesecond.png) no-repeat;
+            background-size: 100% 100%;
+            position:relative;
+        }
+        .cmr-mb-monthtic-detailthird{
+            height:7.67rem;
+            width:100%;
+            margin-bottom:0.67rem;
+            background: url(http://wap.cmread.com/rbc/p/content/repository/ues/image/s109/booknamethird.png) no-repeat;
+            background-size: 100% 100%;
+            position:relative;
+        }
+    }
+}
+.cmr-mb-monthtic-detail{
+em{
+    position:absolute;
+}
+em:nth-child(1){
+    left:3%;
+    top:1.13rem;
+    font-size: 1.133rem;
+    color:#6C97FF;
+    width:62%;
+    overflow: hidden;
+    
+}
+em:nth-child(2){
+    font-size: 0.87rem;
+    color:#6C97FF;
+    right: 4%;
+    top:1.133rem;
+}
+em:nth-child(3){
+    font-size: 0.87rem;
+    left:3%;
+    top:3.7rem;
+    color:#969FA9;
+
+}
+}
+.cmr-mb-monthtic-detailsecond{
+em{
+    position:absolute;
+}
+em:nth-child(1){
+    left:3%;
+    top:0.7rem;
+    font-size: 1.133rem;
+    color:#6C97FF;
+    width:64%;
+    overflow: hidden;
+    
+    
+}
+em:nth-child(2){
+    font-size: 0.87rem;
+    color:#6C97FF;
+    right: 4%;
+    top:1.47rem;
+}
+em:nth-child(3){
+    font-size: 0.87rem;
+    left:3%;
+    top:4.5rem;
+    color:#969FA9;
+
+}
+}
+.cmr-mb-monthtic-detailthird{
+em{
+    position:absolute;
+}
+em:nth-child(1){
+    left:3%;
+    top:0.6rem;
+    font-size: 1.133rem;
+    color:#6C97FF;
+    display: block;
+    display: -webkit-box;
+    width:64%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    
+}
+em:nth-child(2){
+    font-size: 0.87rem;
+    color:#6C97FF;
+    right: 4%;
+    top:2.33rem;
+}
+em:nth-child(3){
+    font-size: 0.87rem;
+    left:3%;
+    top:5.8rem;
+    color:#969FA9;
+
+}
+}
