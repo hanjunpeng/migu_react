@@ -1,0 +1,34 @@
+@import '../../base/config.scss';
+@import '../../base/mixin.scss';
+.cmr-monthticket_history {
+    .cmr-month-pass-title{
+        color: $txtDarkMain;
+    }
+    .cmr-month-list-warp{
+	    .cmr-month-list {
+	        @include flex-box;
+	        justify-content: space-between;
+	        padding: 0.6rem 0;
+	        p {
+	    	    width: 33.33%;
+	            font-size:0.94rem;
+                line-height:150%;
+                color: $txtDarkMain;
+	        }
+	        .cmr-month-list-leftP{
+	            @include text-overflow;
+	        }
+	        .cmr-month-list-centerP {
+                margin-left: 2rem; 
+	        }
+	        .cmr-month-list-lastP {
+	            font-size:0.8rem;
+                line-height:150%;
+                color: $txtGrayDark;
+                text-align: end;
+	        }
+
+	    }
+    }
+    
+}
