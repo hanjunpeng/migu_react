@@ -1,0 +1,98 @@
+@import '../../base/config.scss';
+@import '../../base/mixin.scss';
+.cmr-discount_benefit {
+	.cmr-db-title{
+        height:7.2rem;
+        margin:0 4.2%;
+        border-bottom:1px solid #e7e7e7;
+        position:relative;
+        i{
+            background:url(http://wap.cmread.com/hbc/p/content/repository/ues/image/s181/20161117105137132.png);
+            background-position:0 0;
+            width:6.6rem;
+            height:4.067rem;
+            background-size: 6.8rem;
+            position:absolute;
+             left:5%;
+            top:1.73rem;
+        }
+        h1{
+            position: absolute;
+            color:#323232;
+            font-weight: bold;
+            left:35%;
+            font-size: 1.6rem;
+            top:2.8rem;
+
+        }
+    }
+    .cmr-db-centain{
+        .cmr-db-growhead{
+            font-size: 1.07rem;
+            height:3.13rem;
+            line-height: 3.13rem;
+            color:#323232;
+            i{
+                height:0.93rem;
+                display: inline-block;
+                width:0.2rem;
+                background-color:#595959;
+                margin:0 5px 0 5%;
+                position:relative;
+                top:0px;
+            }
+        }
+        .cmr-db-fuwen{
+            margin:0 4.2% 0 1.77rem;
+
+        }
+        .cmr-db-mesgin{
+            width:86%;
+            padding:0 7% 1rem 7%;
+            font-size: 0.93rem;
+            color:#848383;
+            margin-top:-1.33rem;
+            i{
+                margin:20px 0 10px 0;
+                display: inline-block;
+                color:#323232;
+            }
+        }
+        .cmr-mv-oder{
+            height:17.53rem;
+            margin-top:1rem;
+            overflow: hidden;
+            i{
+                height:2.6rem;
+                line-height: 2.6rem;
+                text-align: center;
+                font-size: 0.933rem;
+                width:49%;
+                border:1px solid #e7e7e7;
+                display: inline-block;
+                color:#323232;
+                float: left;
+            }
+            i:nth-child(3),i:nth-child(4),i:nth-child(5),i:nth-child(6),i:nth-child(7),i:nth-child(8){
+                border-top:none;
+            }
+            i:nth-child(odd){
+                border-right:none;
+            }
+        }
+    }
+    .cmr-db-footer{
+        height:3.47rem;
+        line-height: 3.47rem;
+        text-align: center;
+        color:#fff;
+        display: block;
+        font-size: 1.2rem;
+        width:100%;
+        background-color:#3778FF;
+        position:fixed;
+        bottom:0;
+        left:0;
+        
+    }
+}
