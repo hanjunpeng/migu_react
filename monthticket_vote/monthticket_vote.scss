@@ -1,0 +1,157 @@
+@import '../../base/config.scss';
+@import '../../base/mixin.scss';
+*{
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color:transparent;
+}
+.cmr-monthticket_vote {
+    padding:0 4%;
+    border-bottom:0.67rem solid #f0f0f0;
+    .cmr-mv-touvote{
+        padding-top:1.07rem;
+        padding-bottom: 1.07rem;
+        .active{
+            border:1px solid #f85a44;
+            color:#f95a44;
+        }
+        li{
+            width:7rem;
+            height:2.87rem;
+            border:1px solid #c3ced9;
+            border-radius:0.267rem;
+            text-align:center;
+            display: inline-block;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            color:#464c56;
+            margin-right: 0.933rem;
+            box-sizing:border-box;
+            line-height:2.87rem;
+        }
+        li:nth-of-type(3n){
+            margin-right: 0;
+        }
+        li:nth-of-type(1),li:nth-of-type(2),li:nth-of-type(3){
+            margin-bottom: 0.8rem;
+        }
+    }
+    .cmr-mv-server{
+        padding-bottom:1.2rem;
+        .cmr-mv-money{
+            position:relative;
+            height:3rem;
+            line-height: 3rem;
+        .cmr-mv-bv{
+           width:1.0667rem;
+           height:1.0667rem;
+           background-color:#d1d1d1;
+           -moz-border-radius:50%;
+           -webkit-border-radius:50%;
+           border-radius:50%;
+           font-size:0.90rem;
+           text-align:center;
+           color:#fff;
+           position:absolute;
+           right:0;
+           top:2px;
+        }
+        .cmr-mv-bv:before{
+            position:relative;
+            top:-14px;
+            left:0;
+        }
+        .cmr-mv-grayColor{
+           
+           border-bottom:1px solid #c3ced9;
+           font-size: 0.94rem;
+           ::-webkit-input-placeholder{
+                color:#C1CEDA;
+                font-size: 0.94rem;
+                line-height: 150%;
+           }
+            ::-moz-input-placeholder{
+                color:#C1CEDA;
+           }
+            ::-ms-input-placeholder{
+                color:#C1CEDA;
+           }
+        }
+        .cmr-mv-blueColor{
+            font-size: 0.94rem;
+            border-bottom:1px solid #3E8AFF;
+            ::-webkit-input-placeholder{
+                color:#C1CEDA;
+                font-size: 0.94rem;
+                line-height: 150%;
+           }
+        }
+        }
+        .cmr-mv-star{
+            height:2.733rem;
+            line-height:2.733rem;
+            padding-left:4.733rem;
+            position:relative;
+            padding-bottom:0.8rem;
+            .cmr-mv-monti{
+                position: relative;
+                top:0.667rem;
+                left:0;
+            }
+            .cmr-mv-qian{
+                color:#FF8C10;
+                position:absolute;
+                top:0.73rem;
+                letter-spacing:1px;
+            }
+            .cmr-mv-qi{
+                 color:#FF8C10;
+                 position:absolute;
+                 top:0.73rem;
+                 left:13.1rem;   
+            }
+            .cmr-mv-monthUrl{
+                position:absolute;
+                right: 0;
+                bottom: 0;
+                color:#3e8aff;
+                padding-right: 0.67rem;
+                .cmr-mv-toicon{
+                    position: absolute;
+                    top:32%;
+                }
+            }
+            
+        }
+        .cmr-mv-tove{
+            color:#fff;
+            display:block;
+            margin:0.8rem auto 0;
+            width:22.8667rem;
+            height:2.667rem;
+            text-align: center;
+            -webkit-border-radius:1.333rem;
+            border-radius:1.333rem;
+            line-height:2.667rem;
+        :active{
+           background: #000; 
+        }
+        }
+
+    }
+    em:first-child{
+        color:#464c56;
+        width:4.83rem;
+        
+    }
+    em:last-child{
+        width:16.5rem;
+        padding-bottom:0.867rem;
+       position:relative;
+    }
+    em:last-child input{
+        width:16.5rem;
+        color:#464c56;
+        border:none;
+        outline:none;
+    }
+}
